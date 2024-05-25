@@ -13,6 +13,8 @@
 		7D2639E32C022C2A008A8F4F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7D2639E22C022C2A008A8F4F /* Base */; };
 		7D2639E52C022C2B008A8F4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D2639E42C022C2B008A8F4F /* Assets.xcassets */; };
 		7D2639E82C022C2B008A8F4F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7D2639E72C022C2B008A8F4F /* Base */; };
+		7D2639F02C022DB3008A8F4F /* ShoppingListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2639EF2C022DB3008A8F4F /* ShoppingListTableViewController.swift */; };
+		7D2639F22C022E50008A8F4F /* ShoppingListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2639F12C022E50008A8F4F /* ShoppingListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		7D2639E42C022C2B008A8F4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D2639E72C022C2B008A8F4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D2639E92C022C2B008A8F4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D2639EF2C022DB3008A8F4F /* ShoppingListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListTableViewController.swift; sourceTree = "<group>"; };
+		7D2639F12C022E50008A8F4F /* ShoppingListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				7D2639E42C022C2B008A8F4F /* Assets.xcassets */,
 				7D2639E62C022C2B008A8F4F /* LaunchScreen.storyboard */,
 				7D2639E92C022C2B008A8F4F /* Info.plist */,
+				7D2639EF2C022DB3008A8F4F /* ShoppingListTableViewController.swift */,
+				7D2639F12C022E50008A8F4F /* ShoppingListTableViewCell.swift */,
 			);
 			path = SesacAssignment0524;
 			sourceTree = "<group>";
@@ -138,9 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D2639F22C022E50008A8F4F /* ShoppingListTableViewCell.swift in Sources */,
 				7D2639E02C022C29008A8F4F /* ViewController.swift in Sources */,
 				7D2639DC2C022C29008A8F4F /* AppDelegate.swift in Sources */,
 				7D2639DE2C022C29008A8F4F /* SceneDelegate.swift in Sources */,
+				7D2639F02C022DB3008A8F4F /* ShoppingListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +308,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +316,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yeonju.SesacAssignment0524;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -328,6 +341,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +349,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yeonju.SesacAssignment0524;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
