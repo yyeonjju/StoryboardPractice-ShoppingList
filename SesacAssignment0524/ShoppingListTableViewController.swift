@@ -27,6 +27,8 @@ class ShoppingListTableViewController: UITableViewController {
         super.viewDidLoad()
         
         tableView.rowHeight = 60
+        tableView.separatorStyle = .none
+        
         title = "쇼핑"
 
         setupUI()
@@ -72,8 +74,9 @@ class ShoppingListTableViewController: UITableViewController {
         cell.starButton.addTarget(self, action: #selector(bookmarkButtonTapped), for: .touchUpInside)
         cell.starButton.tag = indexPath.row
         
-        cell.backgroundColor = .systemGray5
-        cell.layer.cornerRadius = 10
+
+        cell.backgroundColorView.backgroundColor = .systemGray5
+        cell.backgroundColorView.layer.cornerRadius = 10
         
         return cell
     }

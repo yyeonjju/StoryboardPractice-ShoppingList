@@ -8,6 +8,7 @@
 import UIKit
 
 class ShoppingListTableViewCell: UITableViewCell {
+    @IBOutlet var backgroundColorView: UIView!
     @IBOutlet var checkboxButton: UIButton!
     @IBOutlet var shoppingItemLabel: UILabel!
     @IBOutlet var starButton: UIButton!

@@ -69,6 +69,10 @@
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="79"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sFC-17-UTI">
+                                            <rect key="frame" x="10" y="3" width="373" height="73"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nb6-ed-VUp">
                                             <rect key="frame" x="30" y="24.666666666666671" width="30" height="30"/>
                                             <constraints>
@@ -101,15 +105,21 @@
                                         </button>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="sFC-17-UTI" firstAttribute="centerY" secondItem="r2d-8U-NoO" secondAttribute="centerY" id="1iW-NT-0cK"/>
+                                        <constraint firstItem="sFC-17-UTI" firstAttribute="top" secondItem="r2d-8U-NoO" secondAttribute="top" constant="3" id="23T-U1-RXf"/>
                                         <constraint firstItem="jgf-IE-d2H" firstAttribute="leading" secondItem="nb6-ed-VUp" secondAttribute="trailing" constant="30" id="8ur-Ck-UXf"/>
                                         <constraint firstItem="WOz-Li-7Lq" firstAttribute="centerY" secondItem="r2d-8U-NoO" secondAttribute="centerY" id="RLW-hO-oSO"/>
+                                        <constraint firstAttribute="trailing" secondItem="sFC-17-UTI" secondAttribute="trailing" constant="10" id="TBQ-At-7Mc"/>
+                                        <constraint firstItem="sFC-17-UTI" firstAttribute="leading" secondItem="r2d-8U-NoO" secondAttribute="leading" constant="10" id="UhH-Z7-7zW"/>
                                         <constraint firstAttribute="trailing" secondItem="WOz-Li-7Lq" secondAttribute="trailing" constant="30" id="WcN-bw-itf"/>
+                                        <constraint firstAttribute="bottom" secondItem="sFC-17-UTI" secondAttribute="bottom" constant="3" id="X8k-hN-ZBc"/>
                                         <constraint firstItem="nb6-ed-VUp" firstAttribute="leading" secondItem="r2d-8U-NoO" secondAttribute="leading" constant="30" id="YIg-fb-kHL"/>
                                         <constraint firstItem="nb6-ed-VUp" firstAttribute="centerY" secondItem="r2d-8U-NoO" secondAttribute="centerY" id="aik-sp-95h"/>
                                         <constraint firstItem="jgf-IE-d2H" firstAttribute="centerY" secondItem="r2d-8U-NoO" secondAttribute="centerY" id="eon-Nh-kqM"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="backgroundColorView" destination="sFC-17-UTI" id="wgg-7g-f9n"/>
                                     <outlet property="checkboxButton" destination="nb6-ed-VUp" id="TRP-sl-cWF"/>
                                     <outlet property="shoppingItemLabel" destination="jgf-IE-d2H" id="NWq-hY-P0g"/>
                                     <outlet property="starButton" destination="WOz-Li-7Lq" id="rz0-LK-k17"/>
